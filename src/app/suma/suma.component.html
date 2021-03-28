@@ -1,27 +1,35 @@
 <app-menu></app-menu>
 <mat-card class="width">
-    <div class="row">
+    <form class="row" (ngSubmit)="sendValues(f)" #f="ngForm">
         <div class="title">
             <h3>Suma</h3>
         </div>
         <div>
             <mat-form-field appearance="outline" class="margin">
                 <mat-label>Valor 1</mat-label>
-                <input matInput>
+                <input matInput id="value1" name="value1" ngModel required>
+                <mat-error *ngIf="!f.value.value1 === null">
+                    Este valor es requerido
+
+                </mat-error>
             </mat-form-field> 
             <mat-form-field appearance="outline" class="margin-2">
                 <mat-label>Valor 2</mat-label>
-                <input matInput>
+                <input matInput id="value2" name="value2" ngModel required>
             </mat-form-field>
         </div>
         <div>
-            <button mat-flat-button color="primary" class="margin-button-center">Sumar</button>
+            <button 
+                mat-flat-button 
+                color="primary" 
+                class="margin-button-center"
+                [disabled]="!f.valid">Sumar</button>
         </div>
-    </div>  
+    </form>  
     <div class="row">
         <mat-form-field appearance="outline" class="margin-result">
             <mat-label>Resultado</mat-label>
-        <input matInput>
+        <input matInput id="result" value="{{result}}">
         </mat-form-field>
     </div>  
 </mat-card>
