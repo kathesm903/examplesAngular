@@ -1,0 +1,247 @@
+.table-conn {
+    width: 100%;
+  }
+  
+  .mat-card-conn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .list-conn{
+    padding: 10px;
+  }
+  .margin-left-input{
+    margin-left: 5%;
+    width: 100%;
+    margin-top: 2px;
+  }
+  .margin-input-search{
+    margin-left: 2.5%;
+   width: 100%;
+  
+  }
+  
+  .search-icon{
+   
+   padding-left: 10%;
+   padding-top: 14px;
+   padding-bottom: 14px;
+   padding-right: 10%;
+    font-size: 30px;
+  }
+  
+  .search-button{
+    margin-top: 4px;
+   margin-left: 40%;
+  }
+  
+  .assign {
+    text-align: center !important;
+  }
+  
+  @media screen and (max-width: 767px) and (min-width:100px) {
+    .padding-card{
+      max-width: 450px;
+      min-width: 400px;
+    }
+   
+    .mat-table {
+      border: 0;
+      vertical-align: middle
+    }
+    .mat-table caption {
+      font-size: small;
+    }
+  
+    .mat-table .mat-row {
+      border-bottom: 5px solid #ddd;
+      display: block;
+    }
+  
+    .mat-table .mat-cell {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: small;
+      text-align: right;
+      font-weight: normal;
+      margin-left: 20px;
+      height:30px;
+      margin-bottom: 4%;
+      margin-left: 30px;
+    }
+    .mat-table .mat-cell:before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      text-transform: uppercase;
+      font-weight: normal;
+      font-size: .85em;
+    }
+    .mat-table .mat-cell:last-child {
+      border-bottom: 0;
+    }
+      .mat-table .mat-cell:first-child {
+      margin-top: 4%;
+    }
+  
+  
+    .margin-left-input{
+      max-width: 100%;
+    }
+  
+    .margin-input-search{
+      width: 100%;
+      margin-left: 5%; 
+    }
+    
+    .search-icon{
+     
+     padding-left: 10%;
+     padding-top: 14px;
+     padding-bottom: 14px;
+     padding-right: 10%;
+      font-size: 30px;
+    }
+    
+    .search-button{
+      margin-top: 4px;
+     display: inline-block;
+    }
+  }
+  .card-title {
+    margin-bottom: 20px !important;
+    margin-top: 10px;
+  }
+  
+  
+  @media screen and (max-width: 1199px) and (min-width:768px)  {
+    .padding-card{
+      max-width: 450px;
+      min-width: 400px;
+    }
+   
+    .mat-table {
+      border: 0;
+      vertical-align: middle
+    }
+    .mat-table caption {
+      font-size: small;
+    }
+  
+    .mat-table .mat-row {
+      border-bottom: 5px solid #ddd;
+      display: block;
+    }
+  
+    .mat-table .mat-cell {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: small;
+      text-align: right;
+      font-weight: normal;
+      height:30px;
+      margin-bottom: 4%;
+    }
+    .mat-table .mat-cell:before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      text-transform: uppercase;
+      font-weight: normal;
+      
+      
+      font-size: .85em;
+    }
+    .mat-table .mat-cell:last-child {
+      border-bottom: 0;
+    }
+      .mat-table .mat-cell:first-child {
+      margin-top: 4%;
+    }
+  
+  
+    .margin-left-input{
+      margin-left: 8%;
+      max-width: 100%;
+    }
+    .margin-input-search{
+     width: 100%;
+      margin-left: 15%;
+     
+    
+    }
+    
+    .search-icon{
+     
+     padding-left: 10%;
+     padding-top: 14px;
+     padding-bottom: 14px;
+     padding-right: 10%;
+      font-size: 30px;
+    }
+    
+    .search-button{
+      margin-top: 4px;
+     margin-left: 25%;
+    }
+  }
+  
+  @media screen and (max-width: 1478px) and (min-width: 1200px){
+  
+    .margin-left-input{
+      margin-left: 8%;
+      max-width:100%;
+    }
+    .margin-input-search{
+     width: 92%;
+   
+    
+    }
+    
+    .search-icon{
+     
+     padding-left: 10%;
+     padding-top: 14px;
+     padding-bottom: 14px;
+     padding-right: 10%;
+      font-size: 30px;
+    }
+    
+    .search-button{
+      margin-top: 4px;
+     margin-left: 8%;
+    }
+    
+  }
+  
+  @media screen and (max-width: 1800px) and (min-width: 1479px){
+    .margin-left-input{
+      margin-left: 8%;
+      max-width:100%;
+    }
+    .margin-input-search{
+     width: 97%;
+   
+    
+    }
+    
+    .search-icon{
+     
+     padding-left: 10%;
+     padding-top: 14px;
+     padding-bottom: 14px;
+     padding-right: 10%;
+      font-size: 30px;
+    }
+    
+    .search-button{
+      margin-top: 4px;
+     margin-left: 10%;
+    }
+  }

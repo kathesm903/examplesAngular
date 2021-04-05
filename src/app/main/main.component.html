@@ -1,0 +1,66 @@
+<app-menu></app-menu>
+
+<div class="container-fluid list-conn">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="box padding-card">
+                <mat-card class="mat-card-conn">
+                    <mat-card-header>
+                        <mat-card-title class="card-title">Sumas Realizadas</mat-card-title>
+                    </mat-card-header>
+                  
+                    <div class="row">
+                  
+                        <mat-card-content>
+                            <mat-table [dataSource]="dataSource" class="table-conn">
+                                <ng-container class="assign" matColumnDef="a">
+                                    <mat-header-cell class="assign" *matHeaderCellDef>{{ columnsConn.a }} </mat-header-cell>
+                                    <mat-cell class="assign" *matCellDef="let row" data-label="a"> {{ row.a }} </mat-cell>
+                                </ng-container>
+        
+                                <ng-container class="assign" matColumnDef="b">
+                                    <mat-header-cell class="assign" *matHeaderCellDef> {{ columnsConn.b }} </mat-header-cell>
+                                    <mat-cell class="assign" *matCellDef="let row" data-label="b"> {{ row.b }} </mat-cell>
+                                </ng-container>
+        
+                                <ng-container class="assign" matColumnDef="r">
+                                    <mat-header-cell *matHeaderCellDef> {{ columnsConn.r }} </mat-header-cell>
+                                    <mat-cell *matCellDef="let row" data-label="r" style="margin-right: 5px;"> 
+                                    {{ row.r }} </mat-cell>
+                                </ng-container>
+                    
+                                <ng-container class="assign" matColumnDef="actions">
+                                    <mat-header-cell class="assign" *matHeaderCellDef> {{ columnsConn.actions }} </mat-header-cell>
+                                    <mat-cell class="assign" *matCellDef="let row" data-label="actions"> 
+                                        <!-- <button 
+                                            mat-icon-button
+                                            (click)="onUpdate(row)">
+                                        <mat-icon>edit</mat-icon>
+                                        </button> -->
+                                        <button
+                                            mat-icon-button
+                                            (click)="onDelete(row)">
+                                            <mat-icon>delete</mat-icon>
+                                        </button>
+                                    </mat-cell>
+                                </ng-container>
+                                <!--  <tr mat-header-row *matHeaderRowDef="['header-row-first-group']"></tr> -->
+                                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                                <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                    
+                            </mat-table>
+                        </mat-card-content>
+                    </div>
+                </mat-card>
+              </div>
+          </div>
+      </div>
+    </div>
+  
+   <!--  <div class="progress-loader" *ngIf="spinner">
+      <mat-progress-spinner [mode]="'indeterminate'">
+      </mat-progress-spinner>
+    </div> -->
+       
+  
+  
